@@ -14,15 +14,16 @@ next(fibonacci_gen) -> 8
 """
 
 
-def fibonacci_gen(n: int):
+def fibonacci(n=6):
     a, b = 1, 1
     for i in range(n):
         yield a
         a, b = b, a + b
 
 
-for item in fibonacci_gen(8):
+for item in fibonacci():
     print(item)
+
 
 
 
