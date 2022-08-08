@@ -10,14 +10,14 @@ next(factorial_gen) -> 2
 next(factorial_gen) -> 6
 next(factorial_gen) -> 24
 """
-from math import factorial
+import math
 
 
-def factorial_gen(n: int):
+def factorial(n=5):
     for i in range(1, n + 1, 1):
-        yield factorial(i)
+        yield math.factorial(i)
 
 
-for item in factorial_gen(5):
+for item in factorial():
     print(item)
 
