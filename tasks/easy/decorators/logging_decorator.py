@@ -19,9 +19,8 @@ def log_decorator(func):
 
 
 @log_decorator
-def hello(name: str):
+def hello(name="Maksim"):
         print(f'Привет {name}')
 
 
-
-hello("Slava")
+hello()
