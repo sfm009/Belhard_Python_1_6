@@ -20,3 +20,25 @@ school_data = {
     '2a': 13,
     '2b': 30
 }
+
+
+def incr_students(school_data: dict, school_data[keyword]):
+    for i in school_data:
+        result = school_data[i] + 1
+    return result
+
+
+def decr_students(school_data: dict):
+    for i in school_data:
+        while school_data[i] > 0:
+            result = school_data[i] - 1
+    return result
+
+
+def add_class(school_data: dict):
+    school_data[]
+
+
+
+
+print(incr_students(school_data))
