@@ -20,7 +20,7 @@ def log_decorator(func):
 
 @log_decorator
 def hello(name="Maksim"):
-        print(f'Привет {name}')
+        print(f'Привет, {name}')
 
 
 hello()
