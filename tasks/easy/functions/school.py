@@ -22,23 +22,30 @@ school_data = {
 }
 
 
-def incr_students(school_data: dict, school_data[keyword]):
-    for i in school_data:
-        result = school_data[i] + 1
+def incr_students(school_data: dict, cls):
+    school_data[cls] += 1
+
+
+def decr_students(school_data: dict, cls):
+    school_data[cls] -= 1
+
+
+def add_class(school_data: dict, cls):
+    school_data[cls] = 0
+
+
+def remove_class(school_data: dict, cls):
+    school_data.pop(cls)
+
+
+def calc_students(school_data: dict):
+    result = sum(school_data.values())
     return result
 
 
-def decr_students(school_data: dict):
-    for i in school_data:
-        while school_data[i] > 0:
-            result = school_data[i] - 1
-    return result
 
-
-def add_class(school_data: dict):
-    school_data[]
-
-
-
-
-print(incr_students(school_data))
+incr_students(school_data, cls='1a')
+decr_students(school_data, cls='1b')
+add_class(school_data, cls='3a')
+remove_class(school_data, cls='2a')
+print(calc_students(school_data))
