@@ -20,4 +20,3 @@ def factorial(n=5):
 
 for item in factorial():
     print(item)
-

@@ -25,4 +25,5 @@ def count_char(STR_VAL: str):
         count_char_dict[key] = value
     return count_char_dict
 
+
 print(count_char(STR_VAL))

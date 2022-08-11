@@ -43,7 +43,6 @@ def calc_students(school_data: dict):
     return result
 
 
-
 incr_students(school_data, cls='1a')
 decr_students(school_data, cls='1b')
 add_class(school_data, cls='3a')

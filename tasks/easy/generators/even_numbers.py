@@ -15,6 +15,6 @@ def get_even_number(n=10):
     for i in range(0, n - 1, 2):
         yield i + 2
 
+
 for item in get_even_number():
     print(item)
-

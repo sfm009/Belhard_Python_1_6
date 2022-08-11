@@ -23,7 +23,3 @@ def fibonacci(n=6):
 
 for item in fibonacci():
     print(item)
-
-
-
-

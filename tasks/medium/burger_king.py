@@ -94,5 +94,6 @@ def beef():
 def chicken():
     print("|||| курица ||||")
 
+
 beef()
 chicken()

@@ -20,4 +20,5 @@ def check_number(n):
             result = True
     return result
 
+
 print(check_number(5))

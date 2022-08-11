@@ -26,4 +26,3 @@ def triangular_numbers(n=7):
 
 for item in triangular_numbers():
     print(item)
-

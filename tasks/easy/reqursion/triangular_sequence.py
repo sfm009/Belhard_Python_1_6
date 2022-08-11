@@ -32,4 +32,5 @@ def triangular_sequence(n: int):
     if n >= 0:
         triangular_sequence(n)
 
+
 triangular_sequence(6)

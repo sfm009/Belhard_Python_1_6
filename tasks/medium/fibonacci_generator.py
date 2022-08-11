@@ -32,4 +32,3 @@ def fibonacci(num_count: int):
 
 for item in fibonacci(num_count=5):
     print(item)
-
