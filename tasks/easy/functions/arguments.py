@@ -26,10 +26,10 @@ def dict_from_args(*args, **kwargs):
     else:
         raise TypeError("Все позиционные аргументы должны быть целыми")
     if all(type(x) is str for x in kwargs):
-        longest = max(len(kwargs.values()))
+        longest = max(kwargs, key=len)
     else:
         raise TypeError("Все аргументы - ключевые слова должны быть строками")
     return {"args_sum": result, "kwargs_max_len": longest}
 
 
-dict_from_args()
+print(dict_from_args(1, 2, 3, first='aaa', second='bbb', third=3))
