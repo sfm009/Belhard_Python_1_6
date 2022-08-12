@@ -24,7 +24,7 @@ def fibonacci(num_count: int):
     if num_count == 0:
         raise ValueError('Введите значение больше 1')
     else:
-        a, b = 1, 2
+        a, b = 1, 1
         for i in range(num_count):
             yield a
             a, b = b, a + b
