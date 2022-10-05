@@ -20,3 +20,31 @@ school_data = {
     '2a': 13,
     '2b': 30
 }
+
+
+def incr_students(school_data: dict, cls):
+    school_data[cls] += 1
+
+
+def decr_students(school_data: dict, cls):
+    school_data[cls] -= 1
+
+
+def add_class(school_data: dict, cls):
+    school_data[cls] = 0
+
+
+def remove_class(school_data: dict, cls):
+    school_data.pop(cls)
+
+
+def calc_students(school_data: dict):
+    result = sum(school_data.values())
+    return result
+
+
+incr_students(school_data, cls='1a')
+decr_students(school_data, cls='1b')
+add_class(school_data, cls='3a')
+remove_class(school_data, cls='2a')
+print(calc_students(school_data))

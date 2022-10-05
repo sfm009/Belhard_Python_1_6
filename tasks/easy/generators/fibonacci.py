@@ -12,3 +12,14 @@ next(fibonacci_gen) -> 3
 next(fibonacci_gen) -> 5
 next(fibonacci_gen) -> 8
 """
+
+
+def fibonacci(n=6):
+    a, b = 1, 1
+    for i in range(n):
+        yield a
+        a, b = b, a + b
+
+
+for item in fibonacci():
+    print(item)
